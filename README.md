@@ -58,8 +58,10 @@ Des captures d’écran sont disponibles dans le dossier `screenshots/` pour ill
 
 ## 🌐 Liens utiles
 
-- Mon profil LinkedIn: https://www.linkedin.com/in/ken-kabeya-kashala)
-- Page Red Hat Certification Registry: https://www.redhat.com/rhtapps/certification/verify/ >>> 📌 https://rhtapps.redhat.com/verify?certId=240-161-257 
+- Mon profil LinkedIn: https://www.linkedin.com/in/ken-kabeya-kashala
+- Page Red Hat Certification Registry: https://www.redhat.com/rhtapps/certification/verify/ 
+                                       https://rhtapps.redhat.com/verify?certId=240-161-257 
+
 - RHCA Roadmap personnel (PDF): ./roadmap_dual_RHCA_Ken.pdf
 
 ---
