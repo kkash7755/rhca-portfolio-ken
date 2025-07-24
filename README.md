@@ -66,7 +66,7 @@ Des captures dâ€™Ã©cran sont disponibles dans le dossier `screenshots/` pour ill
 
 ## ðŸ“« Contact
 
-í³§ Email : ken@example.com  
+í³§ Email : contact@kkashtech.com  
 ðŸ”— LinkedIn : https://www.linkedin.com/in/ken-kabeya-kashala
 EOF
 
