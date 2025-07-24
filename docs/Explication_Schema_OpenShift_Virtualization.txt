@@ -1,0 +1,45 @@
+Schéma OpenShift Virtualization Operator - Explication
+
+1. Admin
+
+L'administrateur interagit avec le cluster via l'API Server. Il peut creer ou gerer des ressources comme les
+VMs via la CLI ou l'interface web.
+
+2. Cluster Services
+
+- API Server : point d'entree pour toutes les requetes d'administration.
+- virt-controller : surveille les objets VM et orchestre leur execution dans le cluster.
+
+3. Nodes
+
+Ce sont les machines (physiques ou virtuelles) ou s'executent les composants comme les pods de VMs ou
+de conteneurs.
+DaemonSet pod : virt-handler
+Deploye sur chaque noeud. Il surveille et gere l'etat des VMs locales, et communique avec l'API server pour
+appliquer les actions requises.
+
+VM pod
+
+- virt-launcher : demarre et encapsule la VM dans un pod.
+- libvirtd : serveur de gestion de la virtualisation.
+- VM : la machine virtuelle elle-meme, executee via KVM/QEMU.
+
+Other pods
+
+Representent les autres conteneurs normaux tournant sur les noeuds aux cotes des VM.
+
+Kubelet
+
+Agent de chaque noeud. Gere le cycle de vie des pods, y compris les VM pods, en coordination avec
+
+virt-handler.
+
+Schéma OpenShift Virtualization Operator - Explication
+
+## Resume
+
+1. L'admin cree une VM via l'API server.
+2. virt-controller traite la demande.
+3. virt-handler lance le VM pod.
+4. virt-launcher initialise la VM via libvirtd.
+5. La VM tourne dans le cluster comme un pod normal.
