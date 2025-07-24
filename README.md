@@ -1,5 +1,5 @@
-cat << 'EOF' > README.md
-# 🏅 RHCA Portfolio - Ken
+# 🏅 RHCA Portfolio - Ken KABEYA KASHALA
+>>>>>>> ddd1ffa (update README.md)
 
 Bienvenue sur mon portfolio technique pour la certification **Red Hat Certified Architect (RHCA)**.  
 Je suis actuellement certifié RHCSA, RHCE et OpenShift Specialist (EX280), et je poursuis une double spécialisation RHCA :
